@@ -1,5 +1,11 @@
 <template>
 	<div>
+		 <div>
+            <p>安装：npm install echarts -S</p>
+            <p>引用：在 main.js 中写入：</p>
+            <p>import echarts from 'echarts'</p>
+            <p>Vue.prototype.$echarts = echarts </p>
+        </div>
 		<div id="myChart" :style="{width: '300px', height: '300px'}"></div>
 	</div>
 </template>
