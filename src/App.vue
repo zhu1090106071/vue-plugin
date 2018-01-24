@@ -1,14 +1,23 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <Nav></Nav>
     <router-view/>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+  import Nav from './components/nav'
+  export default {
+    name: 'App',
+    data () {
+      return {
+        msg: ''
+      }
+    },
+    components : {
+      Nav
+    }
+  }
 </script>
 
 <style>
@@ -18,6 +27,14 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  width: 1200px;
+  margin: 0 auto;
   margin-top: 60px;
+}
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
 }
 </style>

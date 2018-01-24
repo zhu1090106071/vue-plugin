@@ -3,6 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import echarts from 'echarts' //全局引入echarts
+Vue.prototype.$echarts = echarts 
+
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI,{size : "small"})
 
 Vue.config.productionTip = false
 
